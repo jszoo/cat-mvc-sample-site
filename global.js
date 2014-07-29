@@ -3,7 +3,7 @@
 * author: ronglin
 * create date: 2014.6.23
 */
-var mvc = require('zoo-mvc');
+var mvc = require('cat-mvc');
 var app = mvc.gainApp({ appPath: __dirname });
 
 // log

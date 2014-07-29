@@ -1,7 +1,7 @@
 {
-  "name": "zoo-site",
+  "name": "cat-mvc-sample-site",
   "version": "0.0.1",
-  "description": "A sample site which setup on zoo-mvc",
+  "description": "A sample site which setup on cat-mvc",
   "main": "app.js",
   "scripts": {
     "start": "node --debug ./bin/www",
@@ -9,16 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jszoo/zoo-site.git"
+    "url": "https://github.com/jszoo/cat-mvc-sample-site.git"
   },
   "keywords": [
-    "zoo-mvc",
+    "cat-mvc",
     "sample",
     "site"
   ],
   "author": "rulee",
   "dependencies": {
-    "zoo-mvc": "0.0.4",
+    "cat-mvc": "0.0.4",
     "serve-favicon": "~2.0.1",
     "serve-static": "~1.4.0",
     "morgan": "^1.2.0"

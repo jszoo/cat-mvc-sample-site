@@ -1,4 +1,4 @@
-zoo-site
+cat-mvc-sample-site
 ========
 
-A sample site which setup on zoo-mvc
+A sample site which setup on cat-mvc

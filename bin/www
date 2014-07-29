@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 
-var debug = require('debug')('gso');
-var app = require('../global');
+var DEFAULT_PORT = 8000;
+var argv_port = process.env.PORT;
+var server_port = argv_port || DEFAULT_PORT;
 
-app.set('port', process.env.PORT || 8000);
-var server = app.listen(app.get('port'), function() {
-  debug('Server listening on port ' + server.address().port);
+var server = require('../global');
+server.listen(server_port, function() {
+	console.log('DEV Server Start! PORT:' + server_port);
 });

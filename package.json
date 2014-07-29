@@ -4,7 +4,7 @@
   "description": "A sample site which setup on zoo-mvc",
   "main": "app.js",
   "scripts": {
-    "start": "node --debug app",
+    "start": "node --debug ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

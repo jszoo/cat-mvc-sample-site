@@ -1,8 +1,8 @@
 {
   "name": "cat-mvc-sample-site",
   "version": "0.0.1",
-  "description": "A sample site which setup on cat-mvc",
-  "main": "app.js",
+  "description": "A sample site which setup base on cat-mvc",
+  "main": "global.js",
   "scripts": {
     "start": "node --debug ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +16,8 @@
     "sample",
     "site"
   ],
-  "author": "rulee",
+  "author": "ruleechen <rulee@live.cn>",
+  "licenses": "MIT",
   "dependencies": {
     "cat-mvc": "0.0.5",
     "serve-favicon": "~2.0.1",

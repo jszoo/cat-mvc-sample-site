@@ -4,7 +4,7 @@
 * create date: 2014.7.1
 */
 
-var mvc = require('zoo-mvc');
+var mvc = require('cat-mvc');
 
 mvc.controller(function(req, res, end) {
 

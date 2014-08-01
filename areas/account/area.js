@@ -1,22 +1,25 @@
 /*
-* area events
+* area
 * author: ruleechen
 * contact: rulee@live.cn
-* create date: 2014.6.28
+* create date: 2014.8.1
 */
 
 'use strict';
 
-module.exports = {
+var mvc = require('cat-mvc');
 
-    onRegister: function(area) {
+mvc.area(function() {
+
+    this.onRegister = function(area) {
         area.routes.set(
             'account1',
             ('/' + area.name + '/:action?/:controller?/:articleId?'),
             ({ controller: 'home', action: 'index' })
         );
-    },
+    };
 
-    onUnload: function(area) {
-    }
-};
+    this.onUnload = function(area) {
+    };
+
+});

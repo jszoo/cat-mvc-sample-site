@@ -14,7 +14,7 @@ mvc.controller(function(req, res, end) {
     });
 
     this.action('test', function(id) {
-        end.view({ id: id });
+        end.view({ id: id, idType: (typeof(id)) });
     });
 
 });

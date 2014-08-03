@@ -4,5 +4,6 @@
 @html.extend('accountLayout', function(ctx) {
     @html.block('content', function(ctx) {
         <span>id is: @model.id</span>
+        <p>id type is: @model.idType</p>
     })
 })

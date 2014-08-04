@@ -13,7 +13,7 @@ mvc.controller(function(req, res, end) {
         return this.redirectToAction('test','home', { id: 1 });
     });
 
-    this.action('test', function(id) {
+    this.action('test', 'int(id)', function(id) {
         end.view({ id: id, idType: (typeof(id)) });
     });
 

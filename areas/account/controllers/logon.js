@@ -35,8 +35,8 @@ mvc.controller(function(req, res, session, end) {
         }
     });
 
-    this.action('login', 'httpPost', function(UserName, Password, Remember) {
-        if (UserName === 'admin' && Password === 'admin') {
+    this.action('login', 'httpPost, userModel(user)', function(user) {
+        if (user.UserName === 'admin' && user.Password === 'admin') {
             session.loggedin = true;
             end.redirectToAction('admin');
         } else {

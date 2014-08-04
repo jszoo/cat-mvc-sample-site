@@ -12,7 +12,7 @@ mvc.controller(function(req, res, end, tempdata, viewdata, session) {
     this.action('index', function() {
 
         //
-        viewdata['title'] = 'ZooSite';
+        viewdata['title'] = 'cat-mvc';
 
         //
         setTimeout(function() {

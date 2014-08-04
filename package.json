@@ -7,6 +7,10 @@
     "start": "node --debug ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "homepage": "https://github.com/jszoo/cat-mvc-sample-site",
+  "bugs": {
+    "url": "https://github.com/jszoo/cat-mvc-sample-site/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jszoo/cat-mvc-sample-site.git"

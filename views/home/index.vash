@@ -3,7 +3,7 @@
 
     @html.block('content', function(ctx) {
 
-        <h1 class="name">Welcome to @model.title</h1>
+        <h1 class="name">Base on @model.title</h1>
         <p>Thanks for looking at cat mvc sample site!</p>
     })
 

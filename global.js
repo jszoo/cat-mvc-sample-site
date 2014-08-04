@@ -14,11 +14,11 @@ app.use(logger('dev', {}));
 
 // favicon
 var favicon = require('serve-favicon');
-app.use(favicon(app.mapPath('~/frontend/fav.ico')));
+app.use(favicon(app.mapPath('~/resource/fav.ico')));
 
 // static
 var static = require('serve-static');
-app.use(static(app.mapPath('~/frontend')));
+app.use(static(app.mapPath('~/resource')));
 
 // server
 var http = require('http');

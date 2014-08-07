@@ -7,7 +7,7 @@
 
 var mvc = require('cat-mvc');
 
-mvc.controller(function(req, res, end) {
+mvc.controller(function(req, res, end, mongoCtx, mongoCtx1) {
 
     this.action('index', function() {
         return this.redirectToAction('test','home', { id: 1 });

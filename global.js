@@ -8,6 +8,11 @@
 var mvc = require('cat-mvc');
 var app = mvc({ appPath: __dirname });
 
+// inject
+app.on('injectController', function(sender, eventArg) {
+	eventArg.inject['mongoCtx'] = 'mongoCtx';
+});
+
 // log
 var logger = require('morgan');
 app.use(logger('dev', {}));

@@ -22,8 +22,8 @@ mvc.area(function() {
     this.onUnload = function(area) {
     };
 
-    this.onInjectController = function(area, event) {
-    	event.inject['mongoCtx1'] = 'mongoCtx1';
+    this.onInjectController = function(area, injectContext) {
+    	injectContext.inject['mongoCtx1'] = 'mongoCtx1';
     };
 
 });

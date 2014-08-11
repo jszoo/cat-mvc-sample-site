@@ -8,6 +8,7 @@
             <input type="password" name="Password" value="admin" />
             <input type="checkbox" name="Remember" value="true" />
             <input type="submit" value="Submit" />
+            <input type="text" name="user.TEST.Field" value="" />
         </form>
     })
 })

@@ -7,7 +7,7 @@
 
 var mvc = require('cat-mvc');
 
-mvc.controller(function(req, res, session, end) {
+mvc.controller(function(req, res, session, modelState, end) {
 
     this.action('index', function() {
         end.json({ Get: true });
@@ -36,6 +36,10 @@ mvc.controller(function(req, res, session, end) {
     });
 
     this.action('login', 'httpPost, userModel(user)', function(user) {
+        if (!modelState.isValid()) {
+            end.view();
+            return;
+        }
         if (user.UserName === 'admin' && user.Password === 'admin') {
             session.loggedin = true;
             end.redirectToAction('admin');

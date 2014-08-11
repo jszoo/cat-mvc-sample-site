@@ -11,5 +11,12 @@ module.exports = {
         required: true
     },
 
-    Remember: 'boolean'
+    Remember: 'boolean',
+
+    TEST: {
+    	field: {
+    		type: 'string',
+    		maxLength: 2
+    	}
+    }
 };

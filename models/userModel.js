@@ -16,7 +16,7 @@ module.exports = {
     TEST: {
     	field: {
     		type: 'string',
-    		maxLength: 2
+    		minLength: 2
     	}
     }
 };

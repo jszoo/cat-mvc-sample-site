@@ -23,9 +23,9 @@
   "author": "ruleechen <rulee@live.cn>",
   "licenses": "MIT",
   "dependencies": {
-    "cat-mvc": "0.1.5",
+    "cat-mvc": "0.1.6",
     "serve-favicon": "~2.0.1",
-    "serve-static": "~1.4.4",
+    "serve-static": "~1.5.1",
     "morgan": "^1.2.2"
   }
 }

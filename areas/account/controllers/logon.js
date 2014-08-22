@@ -35,7 +35,7 @@ mvc.controller(function(req, res, session, modelState, end) {
         }
     });
 
-    this.action('login', 'httpPost, userModel(user)', function(user) {
+    this.action('login', 'httpPost, userModel(user), customBinder(user)', function(user) {
         if (!modelState.isValid()) {
             end.view();
             return;

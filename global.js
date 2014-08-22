@@ -10,7 +10,22 @@ var app = mvc({ appPath: __dirname });
 
 // inject
 app.on('injectController', function(sender, eventArg) {
-	eventArg.inject['mongoCtx'] = 'mongoCtx';
+    eventArg.inject['mongo'] = 'mongoContext';
+});
+
+// custom model binder
+app.on('init', function() {
+    var customBinder = function() {
+        this.bindModel = function(controllerContext, bindingContext) {
+            bindingContext.value.test = 1;
+            return bindingContext.value;
+        };
+    };
+    var customBinderAttribute = function(paramName) {
+        this.getParamName = function() { return paramName; };
+        this.getBinder = function() { return new customBinder(); }
+    };
+    app.attributes.register('customBinder', customBinderAttribute);
 });
 
 // log

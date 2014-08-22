@@ -23,7 +23,7 @@ mvc.area(function() {
     };
 
     this.onInjectController = function(area, injectContext) {
-    	injectContext.inject['mongoCtx1'] = 'mongoCtx1';
+    	injectContext.inject['mongo1'] = 'mongoContext1';
     };
 
 });

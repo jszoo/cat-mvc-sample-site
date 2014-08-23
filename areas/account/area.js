@@ -12,7 +12,7 @@ var mvc = require('cat-mvc');
 mvc.area(function() {
 
     this.onRegister = function(area) {
-        area.routes.set(
+        area.routes.register(
             'account1',
             ('/' + area.name + '/:action?/:controller?/:articleId?'),
             ({ controller: 'home', action: 'index' })

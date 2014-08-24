@@ -26,6 +26,13 @@ app.on('init', function() {
         this.getBinder = function() { return new customBinder(); }
     };
     app.attributes.register('customBinder', customBinderAttribute);
+
+    //
+    app.filters.add({
+        onAuthorization: function(authorizationContext) {
+            console.log('global filter');
+        }
+    });
 });
 
 // log

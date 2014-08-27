@@ -23,7 +23,7 @@
   "author": "ruleechen <rulee@live.cn>",
   "licenses": "MIT",
   "dependencies": {
-    "cat-mvc": "0.2.3",
+    "cat-mvc": "0.2.4",
     "serve-favicon": "~2.1.1",
     "serve-static": "~1.5.3",
     "morgan": "^1.2.3"
